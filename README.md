@@ -1,4 +1,4 @@
-ReadOnly Protect v 1.0
+ReadOnly Protect v 1.0.0
 
 NOTES
 With this plugin, you can:
@@ -23,4 +23,4 @@ LINK
 https://github.com/ivellioscolin/sublime-plugin-readonlyprotect.git
 
 HISTORY
-1.0 Initial version
+1.0.0 Initial version

@@ -11,11 +11,12 @@
 				[
 					{
 						"id": "ReadOnlyProtect",
-						"caption": "ReadOnly Auto Protect",
+						"caption": "ReadOnly Protect",
 						"children":
 						[
 							{
-								"command": "control_readonly_auto_protect"
+								"command": "control_readonly_auto_protect",
+								"caption": "Auto Protect",
 							}
 						]
 					}

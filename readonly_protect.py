@@ -45,6 +45,12 @@ class ToggleEditableCommand(sublime_plugin.TextCommand):
             self.view.set_status('readonly_protect', 'Uneditable')
 
             DbgPrint("View %d file %s is set uneditable" %(self.view.id(), self.view.file_name()))
+    def is_checked(self, **args):
+        if (self.view.is_read_only()):
+            return False
+        else:
+            return True
+
 
 
 class ReadonlyProtectEventListener(sublime_plugin.EventListener):
@@ -80,8 +86,14 @@ class control_readonly_auto_protect(sublime_plugin.ApplicationCommand):
         config.auto_protect = not config.auto_protect
         DbgPrint("auto protect status is %d" %(config.auto_protect))
 
-    def description(self):
-        return 'Disable' if config.auto_protect else 'Enable'
+    def is_checked(self, **args):
+        if (config.auto_protect):
+            return True
+        else:
+            return False
+
+    #def description(self):
+    #    return 'Disable' if config.auto_protect else 'Enable'
 
 
 def UpdateManualMode(viewId, isManualMode, isSet):

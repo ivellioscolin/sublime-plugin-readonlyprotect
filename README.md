@@ -1,4 +1,4 @@
-ReadOnly Protect v 1.1.0 
+ReadOnly Protect v 1.2.0 
 
 NOTES 
 
@@ -33,6 +33,10 @@ https://github.com/ivellioscolin/sublime-plugin-readonlyprotect.git
 
 HISTORY 
 
+1.2.0 
+ 
+Fix comma issue on ST2. Add settings in menu.
+ 
 1.1.0 
  
 Make README.md rendered properly. 

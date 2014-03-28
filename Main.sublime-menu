@@ -16,12 +16,42 @@
 						[
 							{
 								"command": "control_readonly_auto_protect",
-								"caption": "Auto Protect",
+								"caption": "Auto Protect"
 							}
 						]
 					}
 				]
 			}
 		]
-	}
+	},
+    {
+        "caption": "Preferences",
+        "id": "preferences",
+        "children":
+        [
+            {
+                "caption": "Package Settings",
+                "id": "package-settings",
+                "children":
+                [
+                    {
+                        "caption": "ReadOnly Protect",
+                        "children":
+                        [
+                            {
+                                "command": "open_file",
+                                "args": {"file": "${packages}/ReadOnlyProtect/readonly_protect.sublime-settings"},
+                                "caption": "Settings – Default"
+                            },
+                            {
+                                "command": "open_file",
+                                "args": {"file": "${packages}/User/readonly_protect.sublime-settings"},
+                                "caption": "Settings – User"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
 ]

@@ -1,47 +1,34 @@
-ReadOnly Protect v 1.2.0 
+# ReadOnly Protect v 1.3.0 
 
-NOTES 
-
+### NOTES
 With this plugin, you can: 
+- Protect read-only file agaisnt input.
+- Poll read-only stat from file system in case changed by other application.
+- Show read-only status in status bar.
 
-1. Auto protect read-only file agaisnt input 
+Work for both Sublime Text 2 and 3. 
 
-2. Toggle view editable from tab or context menu 
+### INSTALLATION 
 
-Work for both sublime 2 and 3. 
+- Search "ReadonlyProtect" in [Package Control]. 
+- Grab [latest release] and put all files into "{sublime}\Data\Packages\ReadOnlyProtect" 
 
-INSTALLATION 
+### USAGE
+- Select automatic mode if you would like to sync the stat with the file system.
+- Select manual mode if you would like to force editable or readonly.
+- Protect mode and polling interval can be set by global settings from Preferences->Package Settings->ReadOnly Protect. 
+- Automatic/manual mode and editable/readonly can be toggled from tab, context or menu. 
 
-- Via "Package Control" 
-
-- Put the files into "{sublime}\Data\Packages\ReadOnlyProtect" 
-
-USAGE 
-
-1. For readonly attributed file, the plugin automatilly set the view as uneditable. 
-
-2. Change default setting in "readonly_protect.sublime-settings". On-the-fly setting can be changed via "Tools"->"Packages"->"ReadOnly Protect". 
-
-3. Toggle the editable/uneditable from tab or context menu. 
-
-4. Editable status also shows in status bar. 
-
-LINK 
-
-https://github.com/ivellioscolin/sublime-plugin-readonlyprotect.git 
-
-
-HISTORY 
-
-1.2.0 
- 
+### REVISION
+#### 1.3.0
+Add automatic mode to poll stat from file system.
+#### 1.2.0 
 Fix comma issue on ST2. Add settings in menu.
- 
-1.1.0 
- 
+#### 1.1.0 
 Make README.md rendered properly. 
 Change command on tab, context menu and main menu to checkbox. 
- 
-1.0.0 
-
+#### 1.0.0 
 Initial version 
+
+[Package Control]: <https://packagecontrol.io/installation>
+[latest release]: <https://github.com/ivellioscolin/sublime-plugin-readonlyprotect/releases>

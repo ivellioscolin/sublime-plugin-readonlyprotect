@@ -1,3 +1,4 @@
 [
-    { "caption": "Toggle editable command", "command": "toggle_editable" }
+    { "caption": "ReadOnly Protect: Toggle protect mode", "command": "toggle_protect_mode" }, 
+    { "caption": "ReadOnly Protect: Toggle read-only", "command": "toggle_readonly" }
 ]

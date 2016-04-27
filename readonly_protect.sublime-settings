@@ -1,3 +1,9 @@
 {
-    "auto_protect": true
+    // 0: Disable
+    // 1: Auto, polling stat from file system
+    // 2: Manual, override by selection
+    "protect_mode": 2,
+
+    // interval in milliseconds
+    "polling_interval": 1000
 }

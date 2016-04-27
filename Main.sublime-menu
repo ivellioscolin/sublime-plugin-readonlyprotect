@@ -1,29 +1,42 @@
 [
-	{
-		"id": "tools",
-		"caption": "Tools",
-		"children":
-		[
-			{
-				"id": "packages",
-				"caption": "Packages",
-				"children":
-				[
-					{
-						"id": "ReadOnlyProtect",
-						"caption": "ReadOnly Protect",
-						"children":
-						[
-							{
-								"command": "control_readonly_auto_protect",
-								"caption": "Auto Protect"
-							}
-						]
-					}
-				]
-			}
-		]
-	},
+    {
+        "id": "tools",
+        "caption": "Tools",
+        "children":
+        [
+            {
+                "id": "packages",
+                "caption": "Packages",
+                "children":
+                [
+                    {
+                        "id": "ReadOnlyProtect",
+                        "caption": "ReadOnly Protect",
+                        "children":
+                        [
+                            {   
+                                "command": "show_disabled_status",
+                                "caption": "Plugin Disabled"
+                            },
+                            {
+                                "command": "toggle_protect_mode",
+                                "caption": "Automatic",
+                                "checkbox": "true"
+                            },
+                            {
+                                "caption": "-"
+                            },
+                            {   
+                                "command": "toggle_readonly",
+                                "caption": "Editable",
+                                "checkbox": "true"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
     {
         "caption": "Preferences",
         "id": "preferences",

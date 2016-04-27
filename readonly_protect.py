@@ -87,8 +87,9 @@ def RemoveViewModeStatus(view):
 def isFileReadonly(view):
     isReadonly = False
     if view.file_name() != None:
-        if not(stat.S_IWUSR & os.stat(view.file_name()).st_mode):
-            isReadonly = True
+        if(os.access(view.file_name(), os.F_OK)):
+            if not(stat.S_IWUSR & os.stat(view.file_name()).st_mode):
+                isReadonly = True
     return isReadonly
 
 def enable_polling(enable):

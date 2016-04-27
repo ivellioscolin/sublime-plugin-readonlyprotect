@@ -20,6 +20,9 @@ Work for both Sublime Text 2 and 3.
 - Automatic/manual mode and editable/readonly can be toggled from tab, context or menu. 
 
 ### REVISION
+#### 1.3.1
+Fix the issue that can't open default setting.
+Fix the issue that check file which doesn't exist.
 #### 1.3.0
 Add automatic mode to poll stat from file system.
 #### 1.2.0 

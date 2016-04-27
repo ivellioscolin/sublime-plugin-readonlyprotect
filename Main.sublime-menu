@@ -53,7 +53,7 @@
                         [
                             {
                                 "command": "open_file",
-                                "args": {"file": "${packages}/ReadOnlyProtect/readonly_protect.sublime-settings"},
+                                "args": {"file": "${packages}/ReadonlyProtect/readonly_protect.sublime-settings"},
                                 "caption": "Settings – Default"
                             },
                             {

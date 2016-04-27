@@ -1,4 +1,4 @@
-# ReadOnly Protect v 1.3.0 
+# ReadOnly Protect v 1.3.1 
 
 ### NOTES
 With this plugin, you can: 

@@ -1,4 +1,4 @@
-# ReadOnly Protect v 1.3.2 
+# ReadOnly Protect v 1.3.3 
 
 ### NOTES
 With this plugin, you can: 
@@ -20,6 +20,8 @@ Work for both Sublime Text 2 and 3.
 - Automatic/manual mode and editable/readonly can be toggled from tab, context or menu. 
 
 ### REVISION
+#### 1.3.3
+Only use checkbox for tab and context menu for win32.
 #### 1.3.2
 Fix the issue on Linux that tab and context menu don't show up.
 #### 1.3.1

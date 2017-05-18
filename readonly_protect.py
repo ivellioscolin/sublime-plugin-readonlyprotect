@@ -171,7 +171,19 @@ class ToggleProtectModeCommand(sublime_plugin.TextCommand):
             return False
 
     def description(self):
-        return 'Toggle auto/manual protect mode of a view'
+        if sys.platform == 'win32':
+            return 'Automatic'
+        else:
+            item = GetViewModeStatus(self.view)
+            if item != None:
+                if item.protectMode == 0:
+                    return 'Disabled'
+                elif item.protectMode == 1:
+                    return 'Auto Mode'
+                else:
+                    return 'Manual Mode'
+            else:
+                return 'Automatic'
 
 class ToggleReadonlyCommand(sublime_plugin.TextCommand):
     def run(self, edit, **args):
@@ -202,7 +214,13 @@ class ToggleReadonlyCommand(sublime_plugin.TextCommand):
             return True
 
     def description(self):
-        return 'Toggle readonly/editable of a view'
+        if sys.platform == 'win32':
+            return 'Editable'
+        else:
+            if self.view.is_read_only():
+                return 'Readonly'
+            else:
+                return 'Editable'
 
 class ReadonlyProtectEventListener(sublime_plugin.EventListener):
     def on_new(self, view):

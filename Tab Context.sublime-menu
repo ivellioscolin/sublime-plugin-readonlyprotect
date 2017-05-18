@@ -10,7 +10,6 @@
         },
         {   
             "command": "toggle_protect_mode",
-            "caption": "Automatic",
             "checkbox": "true"
         },
         {
@@ -18,7 +17,6 @@
         },
         {   
             "command": "toggle_readonly",
-            "caption": "Editable",
             "checkbox": "true"
         }
     ]
